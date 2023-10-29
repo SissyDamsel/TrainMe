@@ -2,7 +2,13 @@
 This is hypnosis software made using WPF framework, it is able to play videos in fullscreen mode across multiple screens with separated settings for opacity, sound and video list.
 
 ## Is it still supported?
-No, I will not be providing any support or updates concering this software. 
+No, I will not be providing any support or updates concering this software.
+
+## Why stop the development?
+My focus has shifted towards working on multiplatform solution free of WPF dependency.
+
+## You code is ugly
+Yup.
 
 ## Licence
 This software is licensed under the **GNU General Public License version 3 (GPLv3)**. This license allows users to use, modify, and distribute software without any restrictions or compulsory payments for the licensed code. The license is designed to ensure that modified versions of the code it covers remain free and open source. It also attempts to spread copyleftism by mandating the use of the GPL v3 for distributed adaptations of GPL v3-licensed code.
