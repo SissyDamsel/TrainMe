@@ -1,0 +1,42 @@
+﻿<!--
+	Copyright (C) 2021 Damsel
+
+	This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
+-->
+
+<Window x:Class="TrainMe.Windows.HypnoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrainMe.Windows"
+        mc:Ignorable="d"
+        Title="TrainMe Hypnosis Video Player" Height="450" Width="800"
+        WindowStyle="None" WindowState="Normal" Topmost="True"
+        WindowStartupLocation="Manual"
+        Background="{x:Null}"
+        AllowsTransparency="True"
+        Opacity="0.1" SourceInitialized="Window_SourceInitialized">
+    <Grid IsHitTestVisible="False">
+        <!--<Image Source="/Images/hypno0.jpg"></Image>-->
+        <MediaElement 
+            x:Name="FirstVideo"
+            Source="Videos/hypno1.mp4"          
+            Stretch="UniformToFill"
+            LoadedBehavior="Manual"
+            MediaEnded="FirstVideo_MediaEnded"
+            >
+        </MediaElement>
+        <!--<MediaElement 
+            x:Name="SecondVideo"
+            Source="Videos/hypno1.mp4"          
+            Stretch="UniformToFill"
+            LoadedBehavior="Manual"
+            MediaEnded="FirstVideo_MediaEnded">
+        </MediaElement>-->
+    </Grid>
+</Window>
